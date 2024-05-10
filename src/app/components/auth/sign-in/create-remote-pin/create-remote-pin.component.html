@@ -1,0 +1,29 @@
+<div class="standard-width">
+    <div class="step-top blue-bg white flex cancel">
+        <p></p>
+        <p>Step 3 of 3</p>
+        <p class="p-right-10">Cancel</p>
+    </div>
+    <div class="blue-bg white text-center height-60px">
+        <p class="no-margin"><b>Create Remote App PIN</b></p>
+        <p class="m-t-7">Create a (5 - 6 digits) PIN to access the App</p>
+    </div>
+    <div class="input-container">
+        <form [formGroup]="remotePinForm">
+            <mat-form-field class="full-width" appearance="fill">
+                <mat-label>Create Remote PIN</mat-label>
+                <input type="password" matInput formControlName="createPin">
+                <mat-icon matSuffix>visibility_off</mat-icon>
+            </mat-form-field>
+            <mat-form-field class="full-width" appearance="fill">
+                <mat-label>Confirm Remote App PIN</mat-label>
+                <input type="password" matInput formControlName="confirmPin">
+                <mat-icon matSuffix>visibility_off</mat-icon>
+            </mat-form-field>
+            <p class="m-t-0 padding-left"><small>Your Remote app PIN is not your card PIN</small></p>
+            <div class="padding-10">
+                <button class="white blue-bg full-width padding-10" mat-raised-button>Create</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,8 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+body {
+    background-color: #f5f5f5;
+    height: 100vh;
+}
+
+$blue: #0f9ddf;
+$white: #ffffff;
+$ghostwhite: #f6f4f5;
+$blackish : #2d2d2d; 
+$navy-blue: #00486d;
 
 // Sizes
-
 .full-height {
     height: 100%;
 }
@@ -12,7 +23,112 @@
 }
 
 .standard-width {
-    width: 50%;
+    width: 100%;
     min-width: 300px;
     max-width: 600px
+}
+
+//Flex
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.center-center {
+    align-items: center;
+    justify-content: center;
+}
+
+//Margins
+.no-margin {
+    margin: 0;
+}
+
+
+//Colors
+.blue-color {
+    color: $blue !important;
+}
+
+.blue-bg {
+    background-color: $blue !important;
+}
+
+.white {
+    color: $white !important;
+}
+
+.navy {
+    color: $navy-blue !important;
+}
+
+// Position
+.text-center {
+    text-align: center;
+}
+
+.padding-10 {
+    padding: 10px !important;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+}
+
+//Material Changes
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: $white;
+}
+
+.mat-mdc-form-field-icon-suffix>.mat-icon {
+    color: $blue !important;
+}
+
+.mdc-floating-label--required:not(.mdc-floating-label--hide-required-marker)::after {
+    margin-left: 1px;
+    margin-right: 0px;
+    content: none !important;
+}
+
+.mat-mdc-form-field-infix {
+    width: 143px !important;
+}
+
+.mat-mdc-button:not(:disabled) {
+    color: $blue !important;
+}
+
+.mat-mdc-form-field-subscript-wrapper {
+    height: 0 !important;
+}
+
+.mat-vertical-content {
+    padding: 0 0px 0px 24px !important;
+}
+
+.mat-step-header .mat-step-icon-selected{
+    color: transparent !important;
+}
+
+.mat-step-icon {
+    color: transparent !important;
+    background-color: #00486d !important;
+}
+
+.mat-step-icon .mat-step-icon-state-number .mat-step-icon-selected{
+background-color: #00486d !important;
+}
+
+.mat-stepper-vertical-line::before {
+    border-color: #00486d !important;
+    border-left-width: 2px !important;
 }
