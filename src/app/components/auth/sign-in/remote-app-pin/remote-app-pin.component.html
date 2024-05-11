@@ -1,1 +1,21 @@
-<p>remote-app-pin works!</p>
+<div class="standard-width full-height relative">
+    <div class="img-header">
+        <img class="full-width" src="../../../../../assets/images/Hello.PNG" alt="hello-picture">
+    </div>
+    <div class="input-container">
+        <form [formGroup]="pinForm">
+            <mat-form-field appearance="fill">
+                <mat-icon matPrefix>lock</mat-icon>
+                <mat-label>Remote App PIN</mat-label>
+                <input type="password" matInput formControlName="pin">
+                <mat-icon matSuffix (click)="info()">info</mat-icon>
+            </mat-form-field>
+            <div class="padding-10">
+                <button class="white blue-bg full-width" mat-raised-button>Continue</button>
+            </div>
+        </form>
+    </div>
+    <div class="absolute">
+        <app-footer></app-footer>
+    </div>
+</div>

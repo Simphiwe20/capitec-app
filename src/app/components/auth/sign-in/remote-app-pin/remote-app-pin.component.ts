@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
+import { InfoComponent } from 'src/app/components/PopUps/info/info.component';
 
 @Component({
   selector: 'app-remote-app-pin',
@@ -7,4 +10,15 @@ import { Component } from '@angular/core';
 })
 export class RemoteAppPinComponent {
 
+  pinForm: FormGroup;
+
+  constructor(private dialog: MatDialog) {
+    this.pinForm = new FormGroup ({
+      pin: new FormControl('', [Validators.required])
+    })
+  }
+
+  info() :void {
+    this.dialog.open(InfoComponent)
+  }
 }

@@ -1,0 +1,39 @@
+.height-50 {
+    height: 50px;
+    gap: 32%;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+}
+
+.round {
+    width: 100px;
+    height: 28px;
+    border-radius: 21px;
+}
+
+.padding-left {
+    padding-left: 10px;
+}
+
+.font-big {
+    font-size: xxx-large;
+}
+
+.margin-top-0 {
+    margin-top: 0;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+.absolute-logo {
+    position: absolute;
+    z-index: 1;
+    width: 12%;
+    bottom: 335px;
+    left: 18px;
+}
