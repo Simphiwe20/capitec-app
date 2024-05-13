@@ -1,1 +1,47 @@
-<p>steppers works!</p>
+<div class="standard-width full-height">
+    <div>
+        <img class="absolute-logo full-width" src="../../../../assets/images/capitec-logo.jpeg" alt="capitec-logo">
+    </div>
+    <div class="bar height-50">
+        <mat-icon class="blue-color padding-left" matPrefix>arrow_back</mat-icon>
+        <p class="blue-bg white round flex center-center"><b>For me</b></p>
+    </div>
+    <div class="header-text">
+        <h1 class="text-center font-big navy margin-bottom-0 ">Global<span class="blue-color">One</span></h1>
+        <h3 class="text-center no-margin">Open a Personal Account</h3>
+        <p class="text-center no-margin padding-10">You need to be 16 years or older and have a valid SA ID to open
+            account</p>
+    </div>
+    <div class="padding-10">
+        <mat-stepper orientation="vertical" class="relative">
+            <mat-step aria-disabled="true">
+                <ng-template matStepperIcon="phone" matStepLabel class="navy"><b>Verify your indentity</b>
+                    <p class="no-margin">Take a selfie</p>
+                </ng-template>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel class="navy"><b>Complete basic details</b>
+                    <p class="no-margin">Employment and financial information</p>
+                </ng-template>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel class="navy"><b>Sign the agreement</b>
+                    <p class="no-margin">Take another selfie to sign</p>
+                </ng-template>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel class="navy"><b>Set your PIN</b>
+                    <p class="no-margin">Create a 5-digit app PIN</p>
+                </ng-template>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel class="navy"><b>Start transacting</b>
+                </ng-template>
+           
+            </mat-step>
+        </mat-stepper>
+    </div>
+    <div class="padding-10">
+        <button class="white blue-bg full-width" mat-raised-button>Continue</button>
+    </div>
+</div>

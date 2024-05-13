@@ -26,9 +26,15 @@ import { ConfirmAppActivationComponent } from './components/auth/sign-in/confirm
 import { ActivationInstructionsComponent } from './components/auth/sign-in/activation-instructions/activation-instructions.component';
 import { FeedbackComponent } from './components/auth/sign-in/feedback/feedback.component';
 import { SteppersComponent } from './components/shared/steppers/steppers.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './material/material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { InfoComponent } from './components/PopUps/info/info.component';
+import { AccNumberComponent } from './components/PopUps/acc-number/acc-number.component';
+import { CreateRemotePinComponent } from './components/auth/sign-in/create-remote-pin/create-remote-pin.component';
+import { FooterComponent } from './components/auth/sign-in/footer/footer.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,17 +61,19 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
     ActivationInstructionsComponent,
     FeedbackComponent,
     SteppersComponent,
- 
+    InfoComponent,
+    AccNumberComponent,
+    CreateRemotePinComponent,
+    FooterComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterialModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
-
-    
-
+    ReactiveFormsModule,
+    MaterialModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

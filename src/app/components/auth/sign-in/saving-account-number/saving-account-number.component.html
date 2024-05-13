@@ -1,1 +1,20 @@
-<p>saving-account-number works!</p>
+<div class="standard-width relative full-height">
+    <div class="img-header">
+        <img class="full-width" src="../../../../../assets/images/Hello.PNG" alt="hello-picture">
+    </div>
+    <div class="input-container">
+        <form [formGroup]="inputAccountForm">
+            <mat-form-field appearance="fill">
+                <mat-label>Savings account number</mat-label>
+                <input type="number" matInput formControlName="account">
+                <mat-icon matSuffix (click)="info()">info</mat-icon>
+            </mat-form-field>
+            <div class="padding-10">
+                <button class="white blue-bg full-width" mat-raised-button (click)="submit()">Continue</button>
+            </div>
+        </form>
+    </div>
+    <div class="absolute">
+        <app-footer></app-footer>
+    </div>
+</div>
