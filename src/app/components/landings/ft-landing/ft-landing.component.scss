@@ -1,0 +1,49 @@
+.size{
+    width: 90%;
+    height: 100%;
+}
+// text alignment
+.text-center{
+    text-align: center;
+}
+.full-height-view {
+    height: 100vh;
+}
+.red-text{
+    color: red;
+}
+.helo{
+    width: 100%;
+    height: 30%;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+// margins
+.margin-t-20px{
+    margin-top: 20px;
+}
+// btns 
+.mat-button-toggle-group-appearance-standard {
+    border-radius: 20px;
+    border: solid 1px;
+    width: 100%;
+}
+
+.mat-button-toggle {
+    
+    border-right: solid rgba(18, 18, 18, 0.635) 1px;
+    width: 50%;
+    color: #00486d;
+}
+.btn-bl{
+    color: white !important;
+ background-color:#009de0 !important;
+}
+.pick:hover{
+    
+        color: white;
+        background-color: #00486d !important;
+  
+}

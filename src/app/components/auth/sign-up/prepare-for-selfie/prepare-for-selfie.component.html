@@ -1,1 +1,29 @@
-<p>prepare-for-selfie works!</p>
+<div class="standard-width">
+    <div class="full-width">
+
+        <div class="full-width toolbars">
+            <mat-toolbar class=" border-b blue">
+                <mat-icon><span class="material-symbols-outlined">
+                        arrow_back
+                    </span></mat-icon>
+                <p class="text-center"> Step 2</p>
+            </mat-toolbar>
+            <mat-toolbar class="flex center-center blue">
+                <p> Prepare to take a selfie</p>
+            </mat-toolbar>
+
+        </div>
+
+
+    </div>
+<div class="white-bg height-418px">
+    <img src="../../../../../assets/image/selfie.png" alt="">
+    <p>You will need to : </p>
+    <ul *ngFor="let item of thingstodo">   
+      <li> {{item}}</li> 
+    </ul>
+</div>
+<div class="white-bg footer">
+    <button mat-button class="full-width btn-bl width-90">Ready</button>
+</div>
+</div>
