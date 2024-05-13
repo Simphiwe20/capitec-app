@@ -26,7 +26,9 @@ import { ConfirmAppActivationComponent } from './components/auth/sign-in/confirm
 import { ActivationInstructionsComponent } from './components/auth/sign-in/activation-instructions/activation-instructions.component';
 import { FeedbackComponent } from './components/auth/sign-in/feedback/feedback.component';
 import { SteppersComponent } from './components/shared/steppers/steppers.component';
-
+import { MaterialModule } from './material/material/material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,11 +54,18 @@ import { SteppersComponent } from './components/shared/steppers/steppers.compone
     ConfirmAppActivationComponent,
     ActivationInstructionsComponent,
     FeedbackComponent,
-    SteppersComponent
+    SteppersComponent,
+ 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule
+
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
