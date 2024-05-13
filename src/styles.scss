@@ -65,6 +65,10 @@ $navy-blue: #00486d;
     color: $navy-blue !important;
 }
 
+.white-bg {
+    background-color: $white;
+}
+
 // Position
 .text-center {
     text-align: center;
@@ -131,4 +135,8 @@ background-color: #00486d !important;
 .mat-stepper-vertical-line::before {
     border-color: #00486d !important;
     border-left-width: 2px !important;
+}
+
+.mat-mdc-radio-button .mdc-form-field {
+    color: $blue !important;
 }

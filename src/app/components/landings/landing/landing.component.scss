@@ -1,0 +1,49 @@
+.height-50 {
+    height: 50px;
+    gap: 32%;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+}
+
+.round {
+    width: 100px;
+    height: 28px;
+    border-radius: 21px;
+}
+
+.content-end {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.font-xlarge {
+    margin-top: 0;
+    font-size: x-large;
+}
+
+.off-white-bg{
+    background-color: #f7f7f7;
+}
+
+.width-165px{
+    width: 185px;
+}
+
+.height-80px {
+    height: 80px;
+}
+
+.gap-1em {
+    gap: .5em;
+}
+
+.m-t-3px {
+    margin-top: 3px;
+}
+
+.border-radius-10{
+    border-radius: 10px;
+}
