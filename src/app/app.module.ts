@@ -33,6 +33,7 @@ import { InfoComponent } from './components/PopUps/info/info.component';
 import { AccNumberComponent } from './components/PopUps/acc-number/acc-number.component';
 import { CreateRemotePinComponent } from './components/auth/sign-in/create-remote-pin/create-remote-pin.component';
 import { FooterComponent } from './components/auth/sign-in/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -73,7 +74,8 @@ import { FooterComponent } from './components/auth/sign-in/footer/footer.compone
     BrowserAnimationsModule,
     ReactiveFormsModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
