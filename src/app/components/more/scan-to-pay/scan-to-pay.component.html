@@ -1,1 +1,19 @@
-<p>scan-to-pay works!</p>
+<div class="flex center-center white blue-bg">
+    <h2>Scan to Pay</h2>
+</div>
+<div class="flex spacebetween-center">
+    <div><img src="../../../../assets/images/Masterpass_logo.svg.png" height="25px" alt=""></div>
+    <div> <img src="../../../../assets/images/snapscan.png" height="50px" alt=""></div>
+    <div><img src="../../../../assets/images/zapper-seeklogo.svg" height="30px" alt=""></div>
+</div>
+<ngx-scanner-qrcode #action="scanner" class="main-conainer"></ngx-scanner-qrcode>
+
+<!-- data  -->
+<span>{{ action.data.value | json }}</span><!-- value -->
+<span>{{ action.data | async | json }}</span><!-- async -->
+
+<!-- Loading -->
+<p *ngIf="action.isLoading">⌛ Loading...</p>
+
+<!-- start -->
+<button (click)="action.isStart ? action.stop() : action.start()">{{action.isStart ? 'Stop' : 'Start'}}</button>

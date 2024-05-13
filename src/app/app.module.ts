@@ -26,13 +26,16 @@ import { ConfirmAppActivationComponent } from './components/auth/sign-in/confirm
 import { ActivationInstructionsComponent } from './components/auth/sign-in/activation-instructions/activation-instructions.component';
 import { FeedbackComponent } from './components/auth/sign-in/feedback/feedback.component';
 import { SteppersComponent } from './components/shared/steppers/steppers.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './material/material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InfoComponent } from './components/PopUps/info/info.component';
 import { AccNumberComponent } from './components/PopUps/acc-number/acc-number.component';
 import { CreateRemotePinComponent } from './components/auth/sign-in/create-remote-pin/create-remote-pin.component';
 import { FooterComponent } from './components/auth/sign-in/footer/footer.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { QRCodeModule } from 'angularx-qrcode';
+import { NgxScannerQrcodeModule, LOAD_WASM } from 'ngx-scanner-qrcode';
+LOAD_WASM().subscribe();
 
 
 @NgModule({
@@ -71,9 +74,11 @@ import { FooterComponent } from './components/auth/sign-in/footer/footer.compone
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    QRCodeModule,
+    NgxScannerQrcodeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
