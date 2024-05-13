@@ -1,1 +1,95 @@
-<p>verify-identity works!</p>
+<div class="standard-width full-view-height">
+  <div class="full-width">
+    <div class="full-width toolbars"> 
+        <mat-toolbar class=" border-b blue">
+         <mat-icon><span class="material-symbols-outlined" routerLink="/instruction">
+            arrow_back
+            </span></mat-icon>
+         <p class="text-center"> Step 1</p>
+       </mat-toolbar>
+        <mat-toolbar class="flex center-center blue">
+            <p> Verify your identity</p>
+           </mat-toolbar>
+   </div>
+<div class="imag">
+    <img class="full-width" src="../../../../../assets/image/check 1.PNG" alt=" identityilustrration">
+    
+</div>
+<div> <form  class="form" [formGroup]="registerForm"  >
+    <!-- fullName -->
+    <mat-form-field appearance="fill" >
+        <mat-label>FullName</mat-label>
+        <input matInput placeholder=" Name Surname"  formControlName ="FullName">
+        <mat-icon matSuffix><span class="material-symbols-outlined text-color-blue">
+            info
+            </span></mat-icon>
+        <mat-hint> Name Surname</mat-hint>
+      </mat-form-field>
+    <!-- id -->
+    <mat-form-field appearance="fill" >
+        <mat-label>Id Number</mat-label>
+        <input matInput placeholder="00000000000000" formControlName ="IdNumber"  (input)="onInputChange($event)">
+        <mat-icon matSuffix><span class="material-symbols-outlined text-color-blue">
+            info
+            </span></mat-icon>
+        <mat-hint>You must be 16 or older</mat-hint>
+      </mat-form-field>
+      <!-- contact -->
+      
+      <mat-form-field appearance="fill" >
+        <mat-label>Contact</mat-label>
+        <input matInput placeholder="0000000000" formControlName ="Contact" (input)="onInputChange($event)" >
+        <mat-icon matSuffix>
+          <span class="material-symbols-outlined text-color-blue">
+            info
+            </span>
+          </mat-icon>
+        <mat-hint>Cellphone number</mat-hint>
+      </mat-form-field>
+      <!-- email -->
+      <mat-form-field appearance="fill" >
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="example@gmail.com" formControlName ="Email">
+        <mat-icon matSuffix><span class="material-symbols-outlined text-color-blue">
+            info
+            </span></mat-icon>
+        <mat-hint>email</mat-hint>
+      </mat-form-field>
+      <!-- pin -->
+      <mat-form-field appearance="fill">
+        <mat-label>Create a remote pin</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" placeholder="0000" formControlName ="Password"  (input)="onInputChange($event)">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon><span class="material-symbols-outlined text-color-blue">
+            {{hide ? 'visibility_off' : 'visibility'}}
+            </span></mat-icon>
+        </button>
+      </mat-form-field>
+      <!-- confrim pin -->
+      <mat-form-field appearance="fill">
+        <mat-label>Confrim pin</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" placeholder="00000" formControlName="PasswordConfirm" (input)="onInputChange($event)">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon><span class="material-symbols-outlined text-color-blue">
+            {{hide ? 'visibility_off' : 'visibility'}}
+            </span></mat-icon>
+        </button>
+      </mat-form-field>
+      <!--id doc  -->
+      <div class="file-input flex">
+        <mat-label>ID Document</mat-label>
+        <input (change)="fileUpload($event, 0)" id="file"  class="m-l-30"  type="file" >
+    
+    </div>
+      <!-- adress doc -->
+      <div class="file-input flex">
+        <mat-label>Proof of Address</mat-label>
+        <input file1 (change)="fileUpload($event, 1)" id="file1"  type="file" >
+        
+        
+    </div>
+</form>
+<button mat-button class="full-width btn-bl" (click)="submit()">Create</button>
+</div>
+  </div>
+</div>

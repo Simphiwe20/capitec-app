@@ -1,0 +1,53 @@
+.spacebetween-center{
+    align-items: center;
+    justify-content: space-between;
+}
+.border-b{
+    border-bottom: solid #0000009c;
+}
+.blue{
+    background-color: #009de0;
+    color: white;
+}
+.text-color-blackish{
+color: #2d2d2d;
+}
+ 
+.text-color-blue{
+    color:#0f9ddf ;
+    }
+mat-toolbar{
+    height: 50px;
+    gap: 36%;
+}
+.mat-mdc-form-field{
+    width: 100%;
+    color: #2d2d2d;
+   
+    
+    mat-hint{
+        color: #2d2d2d;
+    }
+}
+.mdc-text-field {
+    background-color: white!important;
+}
+
+.form{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.file-input{
+   
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 12px;
+}
+.btn-bl{
+    color: white !important;
+ background-color:#009de0 !important;
+ margin-top: 12px;
+}
+
+

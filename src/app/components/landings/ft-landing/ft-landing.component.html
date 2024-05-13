@@ -1,1 +1,25 @@
-<p>ft-landing works!</p>
+<div  class=" flex center-center full-height-view standard-width">
+<div class="size">
+<div class="helo">
+    <img src="../../../../assets/image/hello.jpg" alt="" >
+</div>
+<h3 class="text-center">What would you like to do ?</h3>
+<div class="full-width" >
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style" >
+        <mat-button-toggle value="Sign in" (click)="directing('signin')" class="pick">Sign in</mat-button-toggle >
+        <mat-button-toggle value="Open an account" (click)="directing('signup')" class="pick">Open an account</mat-button-toggle>
+      </mat-button-toggle-group>
+      
+ </div>
+
+ <div class="full-width" *ngIf="show">
+    <p class="text-center"> for</p>
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+        <mat-button-toggle value="myself"  (click)="nextStep('myself')" class="pick">Myself</mat-button-toggle >
+        <mat-button-toggle value="My Business" (click)="nextStep('business')" class="pick">My Business</mat-button-toggle>
+      </mat-button-toggle-group>
+      <button mat-raised-button class="full-width btn-bl margin-t-20px" *ngIf="startmyself"  [routerLink]="signIn ? '/activatin-instruction' : '/instruction'" >Get Started</button>
+ </div>
+<h1 class="red-text" *ngIf=" business">Business account  is under contraction </h1>
+</div>
+</div>
